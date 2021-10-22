@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #040411;
+  color: #aaaaaa;
+
+}
+
+.center-elements {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.wrapper {
+  border-radius: 15px;
+  width: 350px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  margin: 15px;
+}
+
+.main-element {
+  /* justify-content: center; */
+  border-radius: 15px;
+  padding: ;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  height: 98%;
+  width: 98%;
+  margin: auto;
+  align-self: center;
+  color: #aaaaaa;
+  /* background: #13131f; */
+  background: #0a0b14;
+  z-index: 1;
+}
+
+.border {
+  border-color:transparent;
+  border-radius: 15px;
+  /* width: 4000px;
+  height: 2000px; */
+  position: absolute;
+  display: block;
+  left: -50%;
+  top: -50%;
+  z-index: -9;
+  display: block;
+  height: 200%;
+  width: 200%;
+  transform: rotate(-45deg);
+  overflow: hidden;
+  background: linear-gradient(to right, rgba(57, 17, 151, 0.637) 20%, rgb(97, 71, 104) 40%, #6800a5 50%, #32085a 55%, rgba(74, 13, 124, 0.37) 70%, rgba(59, 4, 212, 0.562) 100%);
+  background-size: 200% auto;
+  animation: shine 3s linear infinite;
+}
+
+/*Begin shimmer code*/
+
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }fff
+
+.divPhoto {
+  position: absolute;
+}
+
+.photo {
+  margin: 15px;
+  max-width: 90%;
+  min-width: 250px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 350px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 500px;
+  border: 2px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
