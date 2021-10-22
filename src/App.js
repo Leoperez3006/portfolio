@@ -1,4 +1,6 @@
 import { ProjectBox } from "./components/ProjectBox";
+import  ProjectBox2  from "./components/ProjectBox2";
+import ProjectsContainer from "./components/ProjectsContainer";
 
 function App() {
   let urlLink =  'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.bXKbkLkOqPpGM2fmCL_tvgHaFQ%26pid%3DApi&f=1'// 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmystickermania.com%2Fcdn%2Fstickers%2Fnoob-pack%2Fcute-axolotl.png&f=1&nofb=1'
@@ -9,8 +11,8 @@ function App() {
       <header className="App-header">
         header
       </header>
-      <ProjectBox imagen={urlLink} title= {projectTitle} description= {projectDescripcion}/>
-      {/* <ProjectBox imagen={urlLink} title= {projectTitle}/> */}
+      <ProjectsContainer/>
+      {/* <ProjectBox2 imagen={urlLink} title= {projectTitle} description= {projectDescripcion} /> */}
     </div>
   );
 }

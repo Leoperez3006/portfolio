@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from './Image'
-import ScrollText from './ScrollText'
+import ScrollArea from '@xico2k/react-scroll-area';
+
 
 
 export const ProjectBox = (props) => {
@@ -18,7 +19,10 @@ export const ProjectBox = (props) => {
                             <Image className = "photo" url= {props.imagen}/>
                         </div>
                         <div class = "row">
-                            <ScrollText text = {props.description}></ScrollText>
+                            <ScrollArea height="200px">
+                                {props.description}
+                            </ScrollArea>
+
                         </div>
                     </div>
                 </div>
