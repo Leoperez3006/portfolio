@@ -16,6 +16,87 @@ body {
   flex-direction: column ;
 }
 
+
+/* This is the ButtonGit css*/
+
+.wrap {
+  margin: 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*This is the content of the button*/
+.buttonGit {
+  min-width: 50px;
+  min-height: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #a083b4;
+  background: #6800a5;
+  background: linear-gradient(90deg, #040411 0%, #040411 100%);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 12px 12px 24px, #040411;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+
+  /*THis is the border*/
+button::before {
+content: '';
+  border-radius: 10px;
+  min-width: calc(52px + 3px);
+  min-height: calc(52px + 3px);
+  border: 1px solid #6800a5;
+  box-shadow: 0 0 50px #2d1a3ab7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 100;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 10px;
+  border: 6px solid #040411;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+/*   animation: ring 1.5s infinite; */
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+/*Here ends the ButtonGit css*/
+
+
+
+/* 
 .center-elements {
   display: flex;
   text-align: center;
@@ -33,9 +114,10 @@ body {
   overflow: hidden;
   margin: 15px;
 }
+ */
 
-.main-element {
-  /* justify-content: center; */
+/* .main-element {
+  /* justify-content: center;
   border-radius: 15px;
   padding: ;
   position: absolute;
@@ -46,16 +128,16 @@ body {
   margin: auto;
   align-self: center;
   color: #aaaaaa;
-  /* background: #13131f; */
+  /* background: #13131f; 
   background: #0a0b14;
   z-index: 1;
-}
-
+} */
+/* 
 .border {
   border-color:transparent;
   border-radius: 15px;
-  /* width: 4000px;
-  height: 2000px; */
+  width: 4000px;
+  height: 2000px;
   position: absolute;
   display: block;
   left: -50%;
@@ -69,7 +151,7 @@ body {
   background: linear-gradient(to right, rgba(57, 17, 151, 0.637) 20%, rgb(97, 71, 104) 40%, #6800a5 50%, #32085a 55%, rgba(74, 13, 124, 0.37) 70%, rgba(59, 4, 212, 0.562) 100%);
   background-size: 200% auto;
   animation: shine 3s linear infinite;
-}
+} */
 
 /*Begin shimmer code*/
 
@@ -103,7 +185,7 @@ body {
   border: 2px solid steelblue;
   padding: 30px;
   border-radius: 5px;
-}
+} */
 
 .header {
   display: flex;
@@ -120,7 +202,6 @@ footer {
 
 
 .animated-box {
-  
   font-family: 'Poppins', sans-serif;
   width: 300px;
   height: 520px;

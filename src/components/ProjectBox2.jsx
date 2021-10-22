@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from './Image'
+import GitButton from './GitButton';
 import ScrollArea from '@xico2k/react-scroll-area';
 
 function ProjectBox2(props) {
@@ -17,6 +18,7 @@ function ProjectBox2(props) {
                         {props.description}
                     </ScrollArea>
                 </div>
+                <GitButton/>
             </div>
         </div>
     )
