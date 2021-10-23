@@ -28,8 +28,8 @@ body {
 }
 /*This is the content of the button*/
 .buttonGit {
-  min-width: 50px;
-  min-height: 50px;
+  min-width: 100%;
+  min-height: 40px;
   font-family: 'Nunito', sans-serif;
   font-size: 22px;
   text-transform: uppercase;
@@ -53,10 +53,10 @@ body {
 button::before {
 content: '';
   border-radius: 10px;
-  min-width: calc(52px + 3px);
-  min-height: calc(52px + 3px);
+  min-width: calc(100% );
+  min-height: calc(100%);
   border: 1px solid #6800a5;
-  box-shadow: 0 0 50px #2d1a3ab7;
+  box-shadow: 0 0 50px #2d1a3ae5;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -95,64 +95,6 @@ button:hover::after, button:focus::after {
 /*Here ends the ButtonGit css*/
 
 
-
-/* 
-.center-elements {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 15px;
-}
-
-.wrapper {
-  border-radius: 15px;
-  width: 350px;
-  height: 500px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  margin: 15px;
-}
- */
-
-/* .main-element {
-  /* justify-content: center;
-  border-radius: 15px;
-  padding: ;
-  position: absolute;
-  top: 1%;
-  left: 1%;
-  height: 98%;
-  width: 98%;
-  margin: auto;
-  align-self: center;
-  color: #aaaaaa;
-  /* background: #13131f; 
-  background: #0a0b14;
-  z-index: 1;
-} */
-/* 
-.border {
-  border-color:transparent;
-  border-radius: 15px;
-  width: 4000px;
-  height: 2000px;
-  position: absolute;
-  display: block;
-  left: -50%;
-  top: -50%;
-  z-index: -9;
-  display: block;
-  height: 200%;
-  width: 200%;
-  transform: rotate(-45deg);
-  overflow: hidden;
-  background: linear-gradient(to right, rgba(57, 17, 151, 0.637) 20%, rgb(97, 71, 104) 40%, #6800a5 50%, #32085a 55%, rgba(74, 13, 124, 0.37) 70%, rgba(59, 4, 212, 0.562) 100%);
-  background-size: 200% auto;
-  animation: shine 3s linear infinite;
-} */
-
 /*Begin shimmer code*/
 
 @keyframes shine {
@@ -177,15 +119,6 @@ button:hover::after, button:focus::after {
   justify-content: space-between;
 }
 
-.container {
-  max-width: 350px;
-  margin: 30px auto;
-  overflow: auto;
-  min-height: 500px;
-  border: 2px solid steelblue;
-  padding: 30px;
-  border-radius: 5px;
-} */
 
 .header {
   display: flex;
@@ -199,27 +132,24 @@ footer {
   text-align: center;
 }
 
-
-
 .animated-box {
   font-family: 'Poppins', sans-serif;
   width: 300px;
-  height: 520px;
-  padding: 30px;
-  margin: 25px;
+  height: 530px;
+  padding: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   text-align: center;
   border-radius: 15px;
   background-color: #d3d3d318;
 }
 
 .animated-box {
-  box-shadow: 8px 8px 50px #2d1a3ab7;
+  box-shadow: 8px 8px 50px #2d1a3ae5;
   position: relative;
-
 }
 
 .animated-box:after {
-  
   content: '';
   position: absolute;
   top: 0;
@@ -233,9 +163,7 @@ footer {
 }
 
 .animated-box.in:after {
-  
   border-radius: 15px;
-
   animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
 }
 

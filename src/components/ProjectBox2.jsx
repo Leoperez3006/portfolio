@@ -14,7 +14,7 @@ function ProjectBox2(props) {
                     <Image className = "photo" url= {props.imagen}/>
                 </div>
                 <div class = "row">
-                    <ScrollArea height="200px">
+                    <ScrollArea height="200px" >
                         {props.description}
                     </ScrollArea>
                 </div>
