@@ -157,14 +157,14 @@ footer {
   right: 0;
   bottom: 0;
   border-radius: 4px;
-  background: linear-gradient(120deg, rgba(57, 17, 151, 0.637) 20%, rgb(97, 71, 104) 40%, #6800a5 50%, #32085a 55%, rgba(74, 13, 124, 0.37) 70%, rgba(59, 4, 212, 0.562) 100%);
+  background: linear-gradient(45deg, rgba(57, 17, 151, 0.637) 20%, rgb(97, 71, 104) 40%, #6800a5 50%, #32085a 55%, rgba(74, 13, 124, 0.37) 70%, rgba(59, 4, 212, 0.562) 100%);
   background-size: 300% 300%;
   clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
 }
 
 .animated-box.in:after {
   border-radius: 15px;
-  animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
+  animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation 7s ease-in-out infinite;
 }
 
 /* motion */
